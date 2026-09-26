@@ -1,0 +1,20 @@
+{
+  "name": "ghostype-m2-minimal",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f",
+    "build:native": "node-gyp rebuild --runtime=electron --target=28.3.3 --dist-url=https://electronjs.org/headers"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.1.2",
+    "node-addon-api": "^7.1.0"
+  },
+  "devDependencies": {
+    "electron": "28.3.3",
+    "electron-rebuild": "^3.7.1",
+    "node-gyp": "^10.2.0"
+  }
+}
